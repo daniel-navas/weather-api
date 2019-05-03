@@ -1,5 +1,5 @@
 const secrets = {
-  dbUri: process.env.DB_URI || 'mongodb://127.0.0.1:27017/weather',
+  dbUri: process.env.DB_URI || 'mongodb://mongo:27017/weather',
 };
 
 const getSecret = (key) => secrets[key];
