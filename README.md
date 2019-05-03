@@ -7,28 +7,39 @@ This API give access to 5 day weather forecast in any city, using the data of th
 ### Register
 
 Description: Register user
+
 Method: `POST`
+
 Route: `/api/users/register`
+
 Example body: `{ "email": "danielnavasm@gmail.com", "password": "qwertyui" }`
 
 ### Login
 
 Description: Login user
+
 Method: `POST`
+
 Route: `/api/users/login`
+
 Example body: `{ "email": "danielnavasm@gmail.com", "password": "qwertyui" }`
 
 ### Forecast
 
 Description: You can search weather forecast for 5 days with data every 3 hours by city name
+
 Method: `GET`
+
 Route: `/api/weather/?city={city name}&country={country code}`
+
 Parameters: use ISO 3166 country codes
 
 ### History
 
 Description: Get the search history for the current user
+
 Method: `GET`
+
 Route: `/api/weather/history`
 
 ## Project Setup
